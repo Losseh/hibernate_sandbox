@@ -5,9 +5,9 @@
     <session-factory>
         <!-- JDBC Database connection settings -->
         <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
-        <property name="connection.url">jdbc:mysql://localhost:3306/hibernate_db?useSSL=false</property>
+        <property name="connection.url">jdbc:mysql://localhost:3306/test?useSSL=false</property>
         <property name="connection.username">root</property>
-        <property name="connection.password">root</property>
+        <property name="connection.password"></property>
         <!-- JDBC connection pool settings ... using built-in test pool -->
         <property name="connection.pool_size">1</property>
         <!-- Select our SQL dialect -->
@@ -24,6 +24,6 @@
         <property name="hibernate.dbcp.maxIdle">10</property>
         <property name="hibernate.dbcp.minIdle">5</property>
         <property name="hibernate.dbcp.maxWaitMillis">-1</property>
-        <mapping class="net.javaguides.hibernate.entity.Student" />
+        <mapping class="model.ExampleEntity" />
     </session-factory>
 </hibernate-configuration>
